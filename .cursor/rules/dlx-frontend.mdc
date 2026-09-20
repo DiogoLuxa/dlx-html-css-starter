@@ -1,0 +1,63 @@
+---
+alwaysApply: true
+---
+
+# DLX Frontend Rules
+
+## General
+
+- Preserve the existing project architecture.
+- Prefer simple solutions over unnecessary abstractions.
+- Do not introduce libraries or dependencies without justification.
+- Do not modify unrelated code.
+- Keep code readable and maintainable.
+
+## HTML
+
+- Use semantic HTML whenever appropriate.
+- Prefer native HTML elements over unnecessary divs.
+- Maintain a logical heading hierarchy.
+- Include accessibility attributes when necessary.
+- Do not add ARIA when native HTML already provides the required semantics.
+
+## CSS
+
+- Follow BEM naming conventions for components.
+- Use CSS custom properties from `tokens.css` whenever a token already exists.
+- Avoid hardcoded values when an appropriate design token exists.
+- Prefer `rem` for scalable spacing and typography.
+- Use `px` when fixed pixel precision is appropriate, such as thin borders.
+- Prefer modern CSS features when they simplify the solution.
+- Avoid unnecessary specificity.
+- Avoid `!important` unless there is a clear justification.
+
+## Layout
+
+- Prefer Grid for two-dimensional layouts.
+- Prefer Flexbox for one-dimensional layouts.
+- Use the existing `.container` utility for content width when appropriate.
+- Build responsive layouts based on content needs rather than specific devices.
+
+## JavaScript
+
+- Use vanilla JavaScript unless the project explicitly requires another tool.
+- Prefer `const` by default and `let` when reassignment is necessary.
+- Avoid global variables.
+- Keep functions focused on a single responsibility.
+- Do not add JavaScript when HTML or CSS can solve the problem cleanly.
+
+## Workflow
+
+Before making significant changes:
+
+1. Inspect the existing structure.
+2. Reuse existing tokens, utilities and patterns.
+3. Preserve established naming conventions.
+4. Make the smallest change necessary to solve the problem.
+
+## Learning
+
+- When explaining code, explain the reasoning behind the solution.
+- Do not replace working code solely to demonstrate a different approach.
+- When correcting code, identify the cause of the problem before presenting the fix.
+- Prefer teaching the underlying frontend concept over providing unexplained code.
