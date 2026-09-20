@@ -1,11 +1,9 @@
-/* =========================
-   CSS ENTRY POINT
-========================= */
-
 @import "./reset.css";
+@import "./fonts.css";
 @import "./tokens.css";
 @import "./global.css";
 @import "./utilities.css";
+@import "./welcome.css";
 
 /* =========================
    PROJECT

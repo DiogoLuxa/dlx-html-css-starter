@@ -1,0 +1,180 @@
+/* =========================
+   DLX STARTER WELCOME
+   Delete this file when
+   starting your project.
+========================= */
+
+.welcome {
+  --welcome-bg: #090909;
+  --welcome-surface: #111111;
+  --welcome-text: #f5f5f5;
+  --welcome-muted: #777777;
+  --welcome-accent: #e31b23;
+  --welcome-border: #242424;
+
+  --welcome-font: "Roboto", sans-serif;
+  --welcome-font-mono: "Roboto Mono", monospace;
+
+  display: grid;
+  place-items: center;
+
+  min-height: 100vh;
+  padding: 2rem;
+
+  color: var(--welcome-text);
+  background: radial-gradient(
+    circle at 50% 35%,
+    #181818 0%,
+    var(--welcome-bg) 45%
+  );
+}
+
+.welcome__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: min(100%, 40rem);
+
+  text-align: center;
+
+  animation: welcome-in 700ms ease-out both;
+}
+
+/* Logo */
+
+.welcome__logo {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 2rem;
+
+  font-family: var(--welcome-font);
+  font-size: clamp(3.5rem, 10vw, 6rem);
+  font-weight: 900;
+  line-height: 0.8;
+  letter-spacing: -0.12em;
+}
+
+.welcome__logo span:last-child {
+  position: relative;
+
+  color: var(--welcome-accent);
+  transform: translateX(0.08em);
+}
+
+/* Status */
+
+.welcome__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-bottom: 1.5rem;
+  padding: 0.4rem 0.75rem;
+
+  border: 1px solid var(--welcome-border);
+  border-radius: 100vw;
+
+  color: #b5b5b5;
+
+  font-family: var(--welcome-font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.welcome__check {
+  display: grid;
+  place-items: center;
+
+  width: 1.1rem;
+  height: 1.1rem;
+
+  border-radius: 50%;
+
+  color: var(--welcome-bg);
+  background-color: var(--welcome-accent);
+
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+/* Content */
+
+.welcome__title {
+  margin-bottom: 0.75rem;
+
+  font-size: clamp(1.75rem, 5vw, 2.75rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.welcome__description {
+  max-width: 30rem;
+
+  color: var(--welcome-muted);
+
+  font-size: 0.95rem;
+}
+
+/* Stack */
+
+.welcome__stack {
+  display: flex;
+  gap: 0.5rem;
+
+  margin-top: 2rem;
+}
+
+.welcome__stack span {
+  padding: 0.4rem 0.65rem;
+
+  border: 1px solid var(--welcome-border);
+  border-radius: 0.25rem;
+
+  color: var(--welcome-muted);
+
+  font-family: var(--welcome-font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+}
+
+/* Signature */
+
+.welcome__signature {
+  margin-top: 3rem;
+
+  color: #555555;
+
+  font-family: var(--welcome-font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.welcome__signature strong {
+  color: var(--welcome-accent);
+}
+
+/* Animation */
+
+@keyframes welcome-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome__content {
+    animation: none;
+  }
+}
