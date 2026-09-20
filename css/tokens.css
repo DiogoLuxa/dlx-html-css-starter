@@ -14,8 +14,8 @@
   --color-surface: ;
 
   /* Typography */
-  --font-primary: ;
-  --font-secondary: ;
+  --font-primary: system-ui, sans-serif;
+  --font-secondary: monospace;
 
   --fs-sm: 0.875rem;
   --fs-base: 1rem;

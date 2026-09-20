@@ -22,11 +22,14 @@
   padding: 2rem;
 
   color: var(--welcome-text);
+
   background: radial-gradient(
     circle at 50% 35%,
     #181818 0%,
     var(--welcome-bg) 45%
   );
+
+  font-family: var(--welcome-font);
 }
 
 .welcome__content {
@@ -49,7 +52,6 @@
 
   margin-bottom: 2rem;
 
-  font-family: var(--welcome-font);
   font-size: clamp(3.5rem, 10vw, 6rem);
   font-weight: 900;
   line-height: 0.8;
@@ -125,6 +127,8 @@
   gap: 0.5rem;
 
   margin-top: 2rem;
+
+  font-family: var(--welcome-font-mono);
 }
 
 .welcome__stack span {
@@ -135,7 +139,6 @@
 
   color: var(--welcome-muted);
 
-  font-family: var(--welcome-font-mono);
   font-size: 0.7rem;
   letter-spacing: 0.08em;
 }
